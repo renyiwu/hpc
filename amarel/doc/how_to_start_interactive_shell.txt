@@ -1,0 +1,7 @@
+# Purchased 1 node with 32 cores (16-core processor x 2). 192 GB of RAM. Intel Xeon 6130 CPU.
+# rw409 has:
+#	 100 GB home directory back-up storage /home/rw409
+#	 500 GB scratch storage. not backed up. /scratch/rw409
+#	 1 TB shared project storage, backed up. /projects/f_kongt_1
+
+srun --partition=p_kongt_1 --nodes=1 --ntasks=1 --cpus-per-task=32 --mem=128000 --time=24:00:00 --export=all --pty bash -i

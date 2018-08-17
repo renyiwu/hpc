@@ -1,0 +1,10 @@
+Grant file access permission to Bala (bd387)
+setfacl -m u:bd387:rwx .
+-R recursive
+-x remove
+-m modify
+
+Check acl:
+getfacl .
+
+man setfacl for more.
