@@ -101,7 +101,9 @@ mkdir -p $NF_Work_Dir
 date
 SECONDS=0
 
-nextflow run methyl-seq.nf -w $NF_Work_Dir --SingleEnd="$IS_SINGLE" --reads="$IN_FILES" -with-trace -with-report DNA-methyl.html  -with-timeline DNA-methyl-timeline.html -resume
+srun nextflow run methyl-seq.nf -w $NF_Work_Dir --SingleEnd="$IS_SINGLE" --reads="$IN_FILES" -with-trace -with-report DNA-methyl.html  -with-timeline DNA-methyl-timeline.html -resume
+
+EXIT_STATUS=$?
 
 date
 
@@ -122,7 +124,7 @@ touch "${SLURM_JOB_PARTITION}-${SLURM_JOB_NODELIST}-${SLURM_JOB_ID}-$(($duration
 
 
 # Delete intermediate files.
-if  [ $?  -eq  0 ];
+if  [ $EXIT_STATUS  -eq  0 ];
 then
     echo " Pipeline completed. Removing WorkDir files"
     rm -rf $NF_Work_Dir
