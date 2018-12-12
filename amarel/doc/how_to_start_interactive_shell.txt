@@ -5,3 +5,6 @@
 #	 1 TB shared project storage, backed up. /projects/f_kongt_1
 
 srun --partition=p_kongt_1 --nodes=1 --ntasks=1 --cpus-per-task=32 --mem=128000 --time=24:00:00 --export=all --pty bash -i
+
+# or
+srun -p p_knogt_1 -N 1 -c 12 --mem=32Gb -t 10:00:00 --pty /bin/bash

@@ -1,5 +1,5 @@
 OARC hosts
-
+More resoruce https://rutgers-oarc.github.io/training/
 1. ssh hosts
 amarel.rutgers.edu
 amarel.hpc.rutgers.edu
@@ -14,3 +14,5 @@ https://ondemand.hpc.rutgers.edu
 https://amarel.hpc.rutgers.edu:3443/
 https://amarel1.hpc.rutgers.edu:3443/
 https://amarel2.hpc.rutgers.edu:3443/
+# or use the client from https://www.starnet.com/fastx/current-client?version=2.4.13
+set url to https://amarel1.hpc.rutgers.edu:3443/
