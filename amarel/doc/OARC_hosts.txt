@@ -1,0 +1,16 @@
+OARC hosts
+
+1. ssh hosts
+amarel.rutgers.edu
+amarel.hpc.rutgers.edu
+
+perceval.rutgers.edu
+perceval.hpc.rutgers.edu
+
+2. Ondemand web GUI, file manager, Rstudio etc.
+https://ondemand.hpc.rutgers.edu
+
+3. XFCE desktop
+https://amarel.hpc.rutgers.edu:3443/
+https://amarel1.hpc.rutgers.edu:3443/
+https://amarel2.hpc.rutgers.edu:3443/
