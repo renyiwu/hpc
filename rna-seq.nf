@@ -3,14 +3,9 @@
 ===============================================================
  RNA Sequence
 ===============================================================
- ##  RNA-Seq Analysis Pipeline. Started May 2018.
- ##   https://github.com/dmbala
- ##   Bala Desinghu <dmbala@gmail.com>
+ ##  Renyi Wu May 2018.
+ ##
  ##   Major steps for RNA-Seq are outlined here at https://github.com/SciLifeLab and more detail about nextflow can be found at https://www.nextflow.io
- ##   ---------------------------------------------------------------
- ##   This pipeline is prepared for 
- ##   the Office of Advanced Research Computing (OARC), Rutgers.  
- ##   The pipeline is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY. All required packages are available in OARC cluster. 
  ##   ---------------------------------------------------------------
  #
 */
@@ -230,7 +225,7 @@ process makeBED12 {
         input:
         file gtf from gtf_to_bed
 
-        output:
+     output:
         file "${gtf.baseName}.bed" into bed_rseqc, bed_genebody_coverage
 
         script:

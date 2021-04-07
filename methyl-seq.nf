@@ -3,14 +3,9 @@
 ===============================================================
  DNA Methylation analysis pipeline
 ===============================================================
- ##  DNA-Meth Analysis Pipeline. Started July 2018.
- ##   https://github.com/dmbala
- ##   Bala Desinghu <dmbala@gmail.com>
+ ##  DNA-Meth Analysis Pipeline. 
+ ##   Renyi Wu May 2018.
  ##   Major steps for DNA-meth are outlined here at https://github.com/SciLifeLab and https://github.com/renyiwu/bioseq/blob/master/Methyl-seq_general_workflow.txt. More detail about nextflow can be found at https://www.nextflow.io
- ##   ---------------------------------------------------------------
- ##   This pipeline is prepared for 
- ##   the Office of Advanced Research Computing (OARC), Rutgers.  
- ##   The pipeline is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY. All required packages are available in OARC cluster. 
  ##   ---------------------------------------------------------------
  #
 */
